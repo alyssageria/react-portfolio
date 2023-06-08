@@ -1,38 +1,58 @@
+* {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
 .App {
-  text-align: center;
+  background-image: url('../images/leaves-background.png');
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* navbar styles */
+.navbars {
+  color: white;
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.75rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-items {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-item {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+/* about styles */
+.about {
+  display: flex;
+  height: 80vh;
+}
+
+.about-me {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.about-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-pic {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
 }
