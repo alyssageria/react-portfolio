@@ -5,8 +5,12 @@
 }
 
 .App {
-  background-image: url('../images/leaves-background.png');
-  height: 100vh;
+  background-image: url('./images/leaves-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  height: auto;
 }
 
 /* navbar styles */
@@ -36,6 +40,8 @@
 /* about styles */
 .about {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 80vh;
 }
 
@@ -43,6 +49,7 @@
   color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .about-text {
@@ -52,7 +59,80 @@
 }
 
 .profile-pic {
-  height: 20rem;
-  width: 20rem;
+  height: 22rem;
+  width: 22rem;
   border-radius: 50%;
+}
+
+/* projects page styles */
+.projects {
+  height: 120vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.project-box {
+  border: 1px solid white;
+  border-radius: 25%;
+  height: 25rem;
+  width: 25rem;
+  margin: 1rem;
+}
+
+.project-1 {
+  background-image: url('./images/Screenshot\ 2023-05-09\ 133612.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.project-1:hover {
+  filter: grayscale(90%);
+}
+
+.project-2 {
+  background-image: url('./images/go-for-fitness-screenshot.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-2:hover {
+  filter: grayscale(90%);
+}
+
+.project-3 {
+  background-image: url('./images/Screenshot\ 2023-05-02\ 075901.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-3:hover {
+  filter: grayscale(90%);
+}
+
+.project-4 {
+  background-image: url('./images/flower-student\ bio.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-4:hover {
+  filter: grayscale(90%);
+}
+
+.project-5 {
+  background-image: url('./images/linkedin-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-5:hover {
+  filter: grayscale(90%);
 }
