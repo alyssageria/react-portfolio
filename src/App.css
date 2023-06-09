@@ -136,3 +136,12 @@
 .project-5:hover {
   filter: grayscale(90%);
 }
+
+/* resume page styles */
+.box-1,
+.box-2 {
+  border: 1px solid white;
+  border-radius: 30%;
+  height: 25rem;
+  width: 25rem;
+}
