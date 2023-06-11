@@ -4,8 +4,8 @@ import 'bulma/css/bulma.css';
 function Contact() {
     return (
         <div>
-            <h1 className='is-size-2 has-text-white has-text-centered'>Contact Me</h1>
-            <form className='columns is-flex is-flex-direction-column'>
+            <h1 className='is-size-2 has-text-white ml-6'>Contact Me</h1>
+            <form className='columns is-flex is-flex-direction-column mt-3'>
                 <div className='column is-half'>
                     <p className='has-text-white is-size-3 ml-6'>Name:</p>
                     <input className='input custom-input has-background-black has-text-white ml-6' type='text' placeholder='Name'></input>

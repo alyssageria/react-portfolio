@@ -48,6 +48,8 @@
   cursor: pointer;
 }
 
+
+
 /* about styles */
 .about {
   display: flex;
@@ -73,6 +75,10 @@
   height: 22rem;
   width: 22rem;
   border-radius: 50%;
+}
+
+.nav-item button.active {
+  color: #768ea6 !important;
 }
 
 /* projects page styles */
@@ -155,4 +161,10 @@
   border-radius: 30%;
   height: 25rem;
   width: 25rem;
+}
+
+/* footer styles */
+.icons {
+  height: 3rem;
+  width: 3rem;
 }
