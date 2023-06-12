@@ -11,6 +11,7 @@
   background-position: center;
   min-height: 100vh;
   height: auto;
+  overflow: auto;
 }
 
 /* navbar styles */
@@ -48,8 +49,6 @@
   cursor: pointer;
 }
 
-
-
 /* about styles */
 .about {
   display: flex;
@@ -81,6 +80,9 @@
   color: #768ea6 !important;
 }
 
+/* contact styles */
+
+
 /* projects page styles */
 .projects {
   height: 120vh;
@@ -97,61 +99,61 @@
   height: 25rem;
   width: 25rem;
   margin: 1rem;
+  /* position: absolute; */
 }
 
-.project-1 {
+/* .project-box:hover {
+  filter: grayscale(90%);
+  display: block;
+} */
+
+.github {
+  text-align: center;
+}
+
+
+
+#project-1 {
   background-image: url('./images/Screenshot\ 2023-05-09\ 133612.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
 }
 
-.project-1:hover {
-  filter: grayscale(90%);
-}
 
-.project-2 {
+#project-2 {
   background-image: url('./images/go-for-fitness-screenshot.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.project-2:hover {
-  filter: grayscale(90%);
-}
-
-.project-3 {
+#project-3 {
   background-image: url('./images/Screenshot\ 2023-05-02\ 075901.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.project-3:hover {
-  filter: grayscale(90%);
-}
-
-.project-4 {
-  background-image: url('./images/flower-student\ bio.jpg');
+#project-4 {
+  background-image: url('./images/Screenshot\ 2023-06-12\ 101653.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.project-4:hover {
-  filter: grayscale(90%);
-}
-
-.project-5 {
+#project-5 {
   background-image: url('./images/linkedin-banner.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.project-5:hover {
-  filter: grayscale(90%);
+#project-6 {
+  background-image: url('./images/flower-student\ bio.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* resume page styles */
