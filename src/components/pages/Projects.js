@@ -25,21 +25,21 @@ function Projects() {
         },
         {
             id: 4,
-            title: 'Homehub',
-            deployedLink: 'https://home-hub-management.herokuapp.com/',
-            githubLink: 'https://home-hub-management.herokuapp.com/'
+            title: 'Note Taker',
+            deployedLink: 'https://note-taker-expressjs1.herokuapp.com/',
+            githubLink: 'https://github.com/alyssageria/note-taker-express'
         },
         {
             id: 5,
-            title: 'Homehub',
-            deployedLink: 'https://home-hub-management.herokuapp.com/',
-            githubLink: 'https://home-hub-management.herokuapp.com/'
+            title: 'Weather Dashboard',
+            deployedLink: 'https://alyssageria.github.io/weather-dashboard/',
+            githubLink: 'https://github.com/alyssageria/weather-dashboard'
         },
         {
             id: 6,
-            title: 'Homehub',
-            deployedLink: 'https://home-hub-management.herokuapp.com/',
-            githubLink: 'https://home-hub-management.herokuapp.com/'
+            title: 'Work Day Schedular',
+            deployedLink: 'https://alyssageria.github.io/work-day-scheduler/',
+            githubLink: 'https://github.com/alyssageria/work-day-scheduler'
         }
     ]
     return (
@@ -50,11 +50,18 @@ function Projects() {
             <div className='projects'>
                 {myProjects.map(project => {
                     return (<div key={project.id} className='project-box is-flex is-justify-content-center' id={`project-${project.id}`}>
-                        <a href={project.githubLink}><img className='icons github' src={githubIcon}></img></a>
-                        <a href={project.deployedLink}><img className='icons www' src={wwwIcon}></img></a>
+                        <a href={project.githubLink}><img className='icons github' src={githubIcon} alt='githubIcon'></img></a>
+                        <a href={project.deployedLink}><img className='icons www' src={wwwIcon} alt='wwwIcon'></img></a>
                     </div>)
                 })}
-                {/* <a href="https://home-hub-management.herokuapp.com/"><div className='project-1 project-box'>
+            </div>
+        </div>
+    )
+}
+
+export default Projects;
+
+{/* <a href="https://home-hub-management.herokuapp.com/"><div className='project-1 project-box'>
 
                 </div></a>
                 <a href="https://jacobryanwillis.github.io/Your_Digital_Personal_Trainer/"><div className='project-2 project-box'>
@@ -72,9 +79,3 @@ function Projects() {
                 <div className='project-6 project-box'>
 
                 </div> */}
-            </div>
-        </div>
-    )
-}
-
-export default Projects;
