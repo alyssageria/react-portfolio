@@ -99,16 +99,21 @@
   height: 25rem;
   width: 25rem;
   margin: 1rem;
-  /* position: absolute; */
+  position: relative;
 }
 
-/* .project-box:hover {
-  filter: grayscale(90%);
+.project-box:hover {
+  filter: drop-shadow(8px 8px 10px gray);
   display: block;
-} */
+}
 
-.github {
-  text-align: center;
+.icon-link {
+  opacity: 0;
+}
+
+.project-box:hover .icon-link {
+  opacity: 2;
+  background-color: white;
 }
 
 #project-1 {

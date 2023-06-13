@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
-import githubIcon from '../../images/github-icon.png';
+import githubIcon from '../../images/github-icon-black.png';
 import wwwIcon from '../../images/www-icon.png';
 
 function Projects() {
@@ -49,9 +49,9 @@ function Projects() {
             </div>
             <div className='projects'>
                 {myProjects.map(project => {
-                    return (<div key={project.id} className='project-box is-flex is-justify-content-center' id={`project-${project.id}`}>
-                        <a href={project.githubLink}><img className='icons github' src={githubIcon} alt='githubIcon'></img></a>
-                        <a href={project.deployedLink}><img className='icons www' src={wwwIcon} alt='wwwIcon'></img></a>
+                    return (<div key={project.id} className='project-box is-flex is-justify-content-center is-align-items-center' id={`project-${project.id}`}>
+                        <a href={project.githubLink} className='icon-link p-3'><img className='project-icons github' src={githubIcon} alt='githubIcon'></img></a>
+                        <a href={project.deployedLink} className='icon-link p-3'><img className='project-icons www' src={wwwIcon} alt='wwwIcon'></img></a>
                     </div>)
                 })}
             </div>
