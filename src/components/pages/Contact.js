@@ -28,6 +28,14 @@ function Contact() {
         console.log(e.target.value)
     };
 
+    const handleBlur = (inputType) => {
+        if (inputType === 'name' && !name) {
+            setErrorMessage('Please enter your name');
+        } else if (inputType === 'email' && !validateEmail(email)) {
+            setErrorMessage('Please enter a valid email');
+        }
+    };
+
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
@@ -56,16 +64,33 @@ function Contact() {
             <form className='columns is-flex is-flex-direction-column mt-3' id='contact-form'>
                 <div className='column is-two-thirds'>
                     <p className='has-text-white is-size-3 ml-6'>Name:</p>
-                    <input className='input custom-input has-background-black has-text-white ml-6' type='text' placeholder='Name' name='name' value={name} onChange={handleInputChange}></input>
+                    <input className='input custom-input has-background-black has-text-white ml-6'
+                        type='text'
+                        placeholder='Name'
+                        name='name'
+                        value={name}
+                        onChange={handleInputChange}
+                        onBlur={() => handleBlur('name')}></input>
                 </div>
                 <div className='column is-two-thirds'>
                     <p className='has-text-white is-size-3 ml-6'>Email:</p>
-                    <input className='input custom-input has-background-black has-text-white ml-6' type='email' placeholder='Email' name='email' value={email} onChange={handleInputChange} onBlur={handleFormSubmit}></input>
+                    <input className='input custom-input has-background-black has-text-white ml-6'
+                        type='email'
+                        placeholder='Email'
+                        name='email'
+                        value={email}
+                        onChange={handleInputChange}
+                        onBlur={() => handleBlur('email')}></input>
                 </div>
                 <div>
                     <div className='column is-two-thirds'>
                         <p className='has-text-white is-size-3 ml-6'>Message:</p>
-                        <textarea className=' textarea custom-input has-background-black has-text-white ml-6' type='text' placeholder='Message' name='message' value={message} onChange={handleInputChange}></textarea>
+                        <textarea className=' textarea custom-input has-background-black has-text-white ml-6'
+                            type='text'
+                            placeholder='Message'
+                            name='message'
+                            value={message}
+                            onChange={handleInputChange}></textarea>
                     </div>
                 </div>
                 <div className='column is-one-quarter'>
