@@ -1,12 +1,13 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
+import resume from '../../documents/Resume-Geria.pdf'
 
 function Resume() {
     return (
-        <div>
+        <div className='resume'>
             <h1 className='has-text-white is-size-2 has-text-centered'>Resume</h1>
             <div>
-                <p className='has-text-white is-size-3 has-text-centered'>View my <a href='https://docs.google.com/document/d/1V6B5vWDCXeDtD6i6N2EvKgv9SIy9R46OaYk_SDO1ZlA/edit?usp=sharing'>resume</a></p>
+                <p className='has-text-white is-size-3 has-text-centered p-6'>Download my <a href={resume} download='Resume-Geria.pdf'>Resume 🔗</a></p>
                 <div className='is-flex is-justify-content-space-around m-3'>
                     <div className='box-1 is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
                         <p className='has-text-white has-text-centered is-size-4'>Web Technologies:</p>

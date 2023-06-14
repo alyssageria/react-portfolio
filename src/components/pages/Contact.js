@@ -33,6 +33,8 @@ function Contact() {
             setErrorMessage('Please enter your name');
         } else if (inputType === 'email' && !validateEmail(email)) {
             setErrorMessage('Please enter a valid email');
+        } else {
+            setErrorMessage('Please add your message');
         }
     };
 
@@ -59,7 +61,7 @@ function Contact() {
     };
 
     return (
-        <div>
+        <div className='contact'>
             <h1 className='is-size-2 has-text-white ml-6'>Contact Me</h1>
             <form className='columns is-flex is-flex-direction-column mt-3' id='contact-form'>
                 <div className='column is-two-thirds'>
@@ -90,7 +92,8 @@ function Contact() {
                             placeholder='Message'
                             name='message'
                             value={message}
-                            onChange={handleInputChange}></textarea>
+                            onChange={handleInputChange}
+                            onBlur={() => handleBlur('message')}></textarea>
                     </div>
                 </div>
                 <div className='column is-one-quarter'>

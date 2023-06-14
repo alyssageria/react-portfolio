@@ -81,7 +81,9 @@
 }
 
 /* contact styles */
-
+.contact {
+  height: 80vh;
+}
 
 /* projects page styles */
 .projects {
@@ -166,6 +168,10 @@
   border-radius: 30%;
   height: 25rem;
   width: 25rem;
+}
+
+.resume {
+  height: 80vh;
 }
 
 /* footer styles */
