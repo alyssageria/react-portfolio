@@ -60,7 +60,7 @@ function Contact() {
                 </div>
                 <div className='column is-two-thirds'>
                     <p className='has-text-white is-size-3 ml-6'>Email:</p>
-                    <input className='input custom-input has-background-black has-text-white ml-6' type='text' placeholder='Email' name='email' value={email} onChange={handleInputChange}></input>
+                    <input className='input custom-input has-background-black has-text-white ml-6' type='email' placeholder='Email' name='email' value={email} onChange={handleInputChange} onBlur={handleFormSubmit}></input>
                 </div>
                 <div>
                     <div className='column is-two-thirds'>
