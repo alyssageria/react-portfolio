@@ -7,8 +7,8 @@ function About() {
         <div className='about'>
             <div className='about-me columns'>
                 <div className='about-text column is-two-fifths'>
-                    <h1 className='is-size-2'>About Me</h1>
-                    <p className='is-size-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget accumsan mi. Duis at neque ut metus efficitur hendrerit nec eu leo. Curabitur consequat aliquam elementum. Proin suscipit dictum felis, nec pharetra massa euismod nec. Donec ut erat massa. Donec id tempus enim.</p>
+                    <h1 className='is-size-2 pb-5'>About Me</h1>
+                    <p className='is-size-4'>Hi! <br></br> My name is Alyssa Geria, and I am a full stack web developer. I am from Orange County, California and I have a educational background in Psychology. I am passionate about creating user-centric websites and furthering my understanding of web devlopment in order to improve my skillset.</p>
                 </div>
                 <div className='column is-two-fifths has-text-centered'>
                     <img src={profilePicture} className='profile-pic' alt='my-pic'></img>

@@ -11,8 +11,12 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className="App">
-      <CurrentPage />
-      <Footer />
+      <div className='current-page'>
+        <CurrentPage />
+      </div>
+      <div className='footer-to-bottom'>
+        <Footer />
+      </div>
     </div>
   );
 }

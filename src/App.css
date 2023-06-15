@@ -12,6 +12,8 @@
   min-height: 100vh;
   height: auto;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /* navbar styles */
@@ -178,4 +180,28 @@
 .icons {
   height: 3rem;
   width: 3rem;
+}
+
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .App {
+    height: auto;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .resume-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
