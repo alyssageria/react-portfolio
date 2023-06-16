@@ -62,11 +62,11 @@ function Contact() {
 
     return (
         <div className='contact'>
-            <h1 className='is-size-2 has-text-white ml-6'>Contact Me</h1>
-            <form className='columns is-flex is-flex-direction-column mt-3' id='contact-form'>
+            <h1 className='is-size-2 has-text-white has-text-centered'>Contact Me</h1>
+            <form className='contact-form columns is-flex is-flex-direction-column mt-3' id='contact-form'>
                 <div className='column is-two-thirds'>
-                    <p className='has-text-white is-size-3 ml-6'>Name:</p>
-                    <input className='input custom-input has-background-black has-text-white ml-6'
+                    <p className='form-p has-text-white is-size-3'>Name:</p>
+                    <input className='form-input input custom-input has-background-black has-text-white'
                         type='text'
                         placeholder='Name'
                         name='name'
@@ -75,8 +75,8 @@ function Contact() {
                         onBlur={() => handleBlur('name')}></input>
                 </div>
                 <div className='column is-two-thirds'>
-                    <p className='has-text-white is-size-3 ml-6'>Email:</p>
-                    <input className='input custom-input has-background-black has-text-white ml-6'
+                    <p className='form-p has-text-white is-size-3'>Email:</p>
+                    <input className='form-input input custom-input has-background-black has-text-white'
                         type='email'
                         placeholder='Email'
                         name='email'
@@ -86,8 +86,8 @@ function Contact() {
                 </div>
                 <div>
                     <div className='column is-two-thirds'>
-                        <p className='has-text-white is-size-3 ml-6'>Message:</p>
-                        <textarea className=' textarea custom-input has-background-black has-text-white ml-6'
+                        <p className='form-p  has-text-white is-size-3'>Message:</p>
+                        <textarea className='form-input textarea custom-input has-background-black has-text-white'
                             type='text'
                             placeholder='Message'
                             name='message'
@@ -97,12 +97,12 @@ function Contact() {
                     </div>
                 </div>
                 <div className='column is-one-quarter'>
-                    <button className='button has-background-black has-border-white has-text-white ml-6' onClick={handleFormSubmit}>Submit</button>
+                    <button className='button has-background-black has-border-white has-text-white' onClick={handleFormSubmit}>Submit</button>
                 </div>
             </form>
             {errorMessage && (
                 <div>
-                    <p className="error-text has-text-white ml-6">{errorMessage}</p>
+                    <p className="error-text has-text-white">{errorMessage}</p>
                 </div>
             )}
         </div>

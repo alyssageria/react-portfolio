@@ -8,7 +8,7 @@ function Resume() {
             <h1 className='has-text-white is-size-2 has-text-centered'>Resume</h1>
             <div>
                 <p className='has-text-white is-size-3 has-text-centered p-6'>Download my <a href={resume} download='Resume-Geria.pdf'>Resume 🔗</a></p>
-                <div className='resume-boxes is-flex is-justify-content-space-around m-3'>
+                <div className='resume-boxes is-flex is-justify-content-space-around is-flex-wrap-wrap m-3'>
                     <div className='box-1 is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
                         <p className='has-text-white has-text-centered is-size-4'>Web Technologies:</p>
                         <ul className='has-text-white has-text-centered'>

@@ -16,6 +16,7 @@
   flex-direction: column;
 }
 
+
 /* navbar styles */
 .navbars {
   color: white;
@@ -83,13 +84,12 @@
 }
 
 /* contact styles */
-.contact {
-  height: 80vh;
+.contact-form {
+  padding: 1em;
 }
 
 /* projects page styles */
 .projects {
-  height: 120vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -172,10 +172,6 @@
   width: 25rem;
 }
 
-.resume {
-  height: 80vh;
-}
-
 /* footer styles */
 .icons {
   height: 3rem;
@@ -189,6 +185,21 @@
     height: auto;
   }
 
+  .nav-items {
+    font-size: .5rem;
+  }
+
+  #nav-button {
+    font-size: 1rem;
+  }
+
+  .navbars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .about-me {
     display: flex;
     flex-direction: column;
@@ -197,11 +208,22 @@
     padding: 1rem;
   }
 
-  .resume-boxes {
+  /* .resume-boxes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  } */
+
+  .profile-pic {
+    height: 14rem;
+    width: 14rem;
+  }
+
+  .box-1,
+  .box-2 {
+    height: 22rem;
+    width: 22rem;
   }
 
 }

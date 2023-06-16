@@ -4,6 +4,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
+import Footer from './Footer';
 
 function CurrentPage() {
     const [currentPage, setCurrentPage] = useState('About');
@@ -27,7 +28,7 @@ function CurrentPage() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div>
+        <div >
             <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
         </div>
