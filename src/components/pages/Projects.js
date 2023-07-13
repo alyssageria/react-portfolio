@@ -25,9 +25,9 @@ function Projects() {
         },
         {
             id: 4,
-            title: 'Note Taker',
-            deployedLink: 'https://note-taker-expressjs1.herokuapp.com/',
-            githubLink: 'https://github.com/alyssageria/note-taker-express'
+            title: 'Sports Connect',
+            deployedLink: 'https://sports-connect-e11a3bbe276b.herokuapp.com/',
+            githubLink: 'https://github.com/JaminHLO/jaan-event-manager'
         },
         {
             id: 5,
